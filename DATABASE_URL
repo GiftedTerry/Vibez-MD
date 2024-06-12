@@ -1,0 +1,26 @@
+DATABASEURL=sqlite:///vibez-md.db
+
+[database]
+driver=sqlite
+username=
+password=
+host=localhost
+port=3000
+
+[tables]
+users=sqlite:///vibez-md.db/users
+messages=sqlite:///vibez-md.db/messages
+settings=sqlite:///vibez-md.db/settings
+
+[indexes]
+users_id=sqlite:///vibez-md.db/users(id)
+messages_id=sqlite:///vibez-md.db/messages(id)
+settings_id=sqlite:///vibez-md.db/settings(id)
+
+[caching]
+enabled=true
+ttl=60 # 1 minute
+
+[async]
+enabled=true
+workers=5 # adjust according to your server resources
