@@ -7,6 +7,20 @@ const pool = new Pool({
 const bot = require(__dirname + '/lib/vibez');
 const { VERSION } = require(__dirname + '/config');
 
+bot.on('message', (msg) => {
+  const name = msg.author.username;
+  const number = msg.author.phone;
+  const message = msg.body;
+
+  db.run('INSERT INTO users (name, phone) VALUES (?, ?)', [name, number], function(err) {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(`User added successfully! ${name} (${number})`);
+    }
+  });
+});
+
 const start = async () => {
   try {
     await bot.init();
