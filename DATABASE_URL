@@ -5,7 +5,7 @@ driver=sqlite
 username=
 password=
 host=localhost
-port=3000
+port=5432
 
 [tables]
 users=sqlite:///vibez-md.db/users
