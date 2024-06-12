@@ -8,7 +8,7 @@ const bot = require(__dirname + '/lib/vibez');
 const { VERSION } = require(__dirname + '/config');
 
 bot.on('message', (msg) => {
-  const name = msg.author.username;
+  const name = msg.author.name;
   const number = msg.author.phone;
   const message = msg.body;
 
