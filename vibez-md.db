@@ -1,0 +1,25 @@
+-- SQLite database schema for Vibez-MD bot
+
+-- Create tables
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  phone TEXT NOT NULL
+);
+
+CREATE TABLE messages (
+  id INTEGER PRIMARY KEY,
+  user_id INTEGER NOT NULL,
+  message TEXT NOT NULL,
+  timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE settings (
+  id INTEGER PRIMARY KEY,
+  key TEXT NOT NULL,
+  value TEXT NOT NULL
+);
+
+-- Create indexes
+CREATE INDEX users_phone_idx ON users (phone);
+CREATE INDEX messages_user_id_idx ON messages (user_id);
