@@ -1,4 +1,4 @@
-DATABASEURL=sqlite:///vibez-md.db
+DATABASE_URL=sqlite:///vibez-md.db
 
 [database]
 driver=sqlite
