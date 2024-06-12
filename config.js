@@ -14,7 +14,6 @@ global.port = process.env.PORT;
 global.appUrl = process.env.APP_URL || '';
 global.email = 'protechackers@gmail.com';
 global.location = 'Africa, Lagos.';
-global.mongodb = process.env.MONGODB_URI || '';
 global.allowJids = process.env.ALLOW_JID || 'null';
 global.blockJids = process.env.BLOCK_JID || 'null';
 global.DATABASE_URL = process.env.DATABASE_URL || '';
