@@ -1,11 +1,10 @@
-# Exported from Render on 2024-06-13T14:06:04Z
 services:
 - type: web
-  name: vibez-id
+  name: vibez-md
   runtime: node
-  repo: https://github.com/GiftedTerry/session-id
+  repo: https://github.com/GiftedTerry/Vibez-MD 
   plan: free
   region: oregon
   buildCommand: yarn install
-  startCommand: node ./vibez.js
+  startCommand: node ./index.js
 version: "1"
