@@ -2,9 +2,9 @@ services:
 - type: web
   name: vibez-md
   runtime: node
-  repo: https://github.com/GiftedTerry/Vibez-MD 
+  repo: https://github.com/GiftedTerry/session-id
   plan: free
-  region: oregon
+  region: singapore 
   buildCommand: yarn install
-  startCommand: node ./index.js
+  startCommand: node ./vibez.js
 version: "1"
