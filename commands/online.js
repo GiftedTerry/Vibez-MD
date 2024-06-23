@@ -1,5 +1,5 @@
 import { sendPresenceUpdate } from '../lib/online_status';
-import { registerCommand } from '../lib/vibez.js';
+import { registerCommand } from '../lib/vibez';
 
 export async function online(m) {
   const prefix = global.config.prefix;
