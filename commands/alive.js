@@ -4,6 +4,7 @@ const { registerCommand } = require("../lib/vibez");
 
 module.exports = {
   name: 'alive',
+  categorie: 'bot',
   description: 'Check if the bot is alive',
   execute(message) {
     if (message.content === `${prefix}alive`) {
