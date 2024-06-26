@@ -61,6 +61,15 @@ ________________________
     });
     menuMsg += `|                      |\n`;
     menuMsg += `______________________\n`;
+    });
+    menuMsg += `______________________\n`;
+    menuMsg += `| |\n`;
+    menuMsg += `| ${button.text} |`;
+    menuMsg += `| |\n`;
+    menuMsg += `______________________\n`;
+
+    respond(menuMsg, {
+      buttons: [button]
   });
 
   const link = mybotpic();
