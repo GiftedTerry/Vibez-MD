@@ -1,5 +1,5 @@
 const { registerCommand } = require('../lib/vibez');
-const { format } = require('../lib/myfunctions');
+const { button } = require('../framework/menu_button');
 const { prefix } = require('../config');
 
 registerCommand({
