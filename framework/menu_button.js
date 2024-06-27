@@ -6,7 +6,8 @@ module.exports = {
       "View Group": "https://chat.whatsapp.com/I2Lad1yJIOA4QwWnxyszAZ"
     },
     click: async (zk, dest) => {
-      zk.sendMessage(dest, {
+      const url = button.url[button.text];
+      zk.openUrl(url);
         text: "Menu",
         buttons: [
           {
