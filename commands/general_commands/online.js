@@ -15,7 +15,7 @@ export async function online(m) {
 
 registerCommand({
   name: 'online',
-  categorie: 'Status',
+  categorie: 'General',
   reaction: '👁️',
 }, {
   execute: online,
