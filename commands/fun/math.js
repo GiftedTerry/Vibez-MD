@@ -66,7 +66,7 @@ registerCommand({
   description: 'Generate a random math problem',
   usage: `${prefix}math [level]`,
   example: `${prefix}math easy`,
-  category: 'Math',
+  category: 'fun',
   execute: async (message, args) => {
     const level = args[0] ? args[0].toLowerCase() : null;
     if (!level) {
