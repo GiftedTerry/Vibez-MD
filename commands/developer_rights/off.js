@@ -9,6 +9,7 @@ registerCommand(
     categorie: 'developer',
     reaction: '💻',
     description: 'Shut down the bot and all files. Only usable by the developers.',
+    hidden: true, 
   },
   async (message) => {
     if (message.content.startsWith(prefix + 'off') && (message.sender === '2349122128803' || message.sender === '2347039853320')) {
