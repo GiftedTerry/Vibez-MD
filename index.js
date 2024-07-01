@@ -1,5 +1,5 @@
 const db = require('./database');
-const bot = require(__dirname + '/lib/vibez');
+const bot = require(__dirname + '../lib/vibez');
 const { VERSION } = require(__dirname + '/config');
 
 bot.on('message', (msg) => {
